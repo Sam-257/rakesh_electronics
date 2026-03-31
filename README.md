@@ -142,6 +142,17 @@ Theme colors are handled separately via `useTheme()` which applies CSS custom pr
 
 Admin saves go through `PUT /api/content/:key`, which writes to SQLite and updates the React Query cache.
 
+## Icons
+
+Icons are rendered dynamically from string names stored in the CMS (e.g. `"BsCpu"`, `"HiOutlineStar"`). The `iconMap` in `src/utils/iconMap.tsx` maps these strings to actual React components.
+
+Available icon sets:
+- **Bootstrap Icons** (`Bs*`) — used for category cards and product-related icons
+- **Heroicons Outline** (`HiOutline*`) — used for highlights, values, and UI elements
+- **Tabler Icons** (`Tb*`) — additional icons for various UI elements
+
+To add a new icon, import it in `iconMap.tsx` and add it to the `iconMap` object. Browse all available icons at [react-icons.github.io/react-icons](https://react-icons.github.io/react-icons/).
+
 ## License
 
 Private — not for redistribution.
