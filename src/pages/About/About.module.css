@@ -1,0 +1,110 @@
+.header {
+  background: linear-gradient(135deg, #0f172a, #1e3a5f);
+  color: var(--color-white);
+  padding: var(--spacing-3xl) var(--spacing-lg);
+  text-align: center;
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: var(--spacing-sm);
+  color: #cbd5e1;
+  font-size: var(--font-size-lg);
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--spacing-3xl);
+  align-items: center;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 360px;
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, var(--color-primary-light), #e0e7ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.storyTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.storyText {
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.valuesSection {
+  background: var(--color-bg-alt);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.valueCard {
+  text-align: center;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.valueIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--spacing-md);
+  border-radius: var(--radius-full);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+.valueTitle {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.valueText {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .storyGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

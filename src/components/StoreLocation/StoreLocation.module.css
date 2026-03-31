@@ -1,0 +1,70 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: start;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.item {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.icon {
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+
+.itemTitle {
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.itemText {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+.mapWrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.mapPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  height: 300px;
+  background: var(--color-bg-alt);
+  color: var(--color-text-light);
+}
+
+.mapIcon {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+}
+
+.mapHint {
+  font-size: var(--font-size-xs);
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
