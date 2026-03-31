@@ -30,6 +30,10 @@ import {
   HiOutlineChip,
   HiOutlineTruck,
 } from 'react-icons/hi';
+import {
+  TbCircuitResistor,
+  TbCircuitCapacitor
+} from "react-icons/tb";
 
 export const iconMap = {
   BsLightningCharge,
@@ -60,6 +64,8 @@ export const iconMap = {
   HiOutlineSupport,
   HiOutlineChip,
   HiOutlineTruck,
+  TbCircuitCapacitor,
+  TbCircuitResistor,
 };
 
 export type IconName = keyof typeof iconMap;
