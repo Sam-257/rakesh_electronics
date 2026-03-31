@@ -1,5 +1,5 @@
 .header {
-  background: linear-gradient(135deg, #0f172a, #1e3a5f);
+  background: linear-gradient(135deg, var(--color-header-gradient-start), var(--color-header-gradient-end));
   color: var(--color-white);
   padding: var(--spacing-3xl) var(--spacing-lg);
   text-align: center;

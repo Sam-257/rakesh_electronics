@@ -118,4 +118,23 @@ export const defaults: ContentMap = {
     { id: 11, name: '0.96" OLED Display Module (I2C)', description: '128×64 pixel SSD1306 OLED display. I2C interface, 3.3V/5V compatible. White text on black.', category: 'Displays', price: 199 },
     { id: 12, name: '16×2 LCD Display with I2C Adapter', description: 'Classic HD44780-based character LCD with soldered I2C backpack. Blue backlight, white text.', category: 'Displays', price: 179 },
   ],
+
+  theme: {
+    colorPrimary: '#2563eb',
+    colorPrimaryDark: '#1d4ed8',
+    colorPrimaryLight: '#dbeafe',
+    colorSecondary: '#0f172a',
+    colorAccent: '#f59e0b',
+    colorText: '#1e293b',
+    colorTextLight: '#64748b',
+    colorBg: '#ffffff',
+    colorBgAlt: '#f8fafc',
+    colorBorder: '#e2e8f0',
+    heroGradientStart: '#0f172a',
+    heroGradientMid: '#1e3a5f',
+    heroGradientEnd: '#2563eb',
+    headerGradientStart: '#0f172a',
+    headerGradientEnd: '#1e3a5f',
+    footerBg: '#0f172a',
+  },
 };

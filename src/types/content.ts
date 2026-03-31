@@ -60,6 +60,25 @@ export interface Product {
   price: number;
 }
 
+export interface ThemeContent {
+  colorPrimary: string;
+  colorPrimaryDark: string;
+  colorPrimaryLight: string;
+  colorSecondary: string;
+  colorAccent: string;
+  colorText: string;
+  colorTextLight: string;
+  colorBg: string;
+  colorBgAlt: string;
+  colorBorder: string;
+  heroGradientStart: string;
+  heroGradientMid: string;
+  heroGradientEnd: string;
+  headerGradientStart: string;
+  headerGradientEnd: string;
+  footerBg: string;
+}
+
 export interface ContentMap {
   hero: HeroContent;
   storeInfo: StoreInfoContent;
@@ -69,6 +88,7 @@ export interface ContentMap {
   highlights: Highlight[];
   testimonials: Testimonial[];
   products: Product[];
+  theme: ThemeContent;
 }
 
 export type ContentKey = keyof ContentMap;

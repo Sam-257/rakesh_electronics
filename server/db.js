@@ -86,6 +86,26 @@ db.exec(`
     username TEXT NOT NULL DEFAULT 'admin',
     password TEXT NOT NULL DEFAULT 'password'
   );
+
+  CREATE TABLE IF NOT EXISTS theme (
+    id INTEGER PRIMARY KEY CHECK (id = 1),
+    colorPrimary TEXT NOT NULL DEFAULT '#2563eb',
+    colorPrimaryDark TEXT NOT NULL DEFAULT '#1d4ed8',
+    colorPrimaryLight TEXT NOT NULL DEFAULT '#dbeafe',
+    colorSecondary TEXT NOT NULL DEFAULT '#0f172a',
+    colorAccent TEXT NOT NULL DEFAULT '#f59e0b',
+    colorText TEXT NOT NULL DEFAULT '#1e293b',
+    colorTextLight TEXT NOT NULL DEFAULT '#64748b',
+    colorBg TEXT NOT NULL DEFAULT '#ffffff',
+    colorBgAlt TEXT NOT NULL DEFAULT '#f8fafc',
+    colorBorder TEXT NOT NULL DEFAULT '#e2e8f0',
+    heroGradientStart TEXT NOT NULL DEFAULT '#0f172a',
+    heroGradientMid TEXT NOT NULL DEFAULT '#1e3a5f',
+    heroGradientEnd TEXT NOT NULL DEFAULT '#2563eb',
+    headerGradientStart TEXT NOT NULL DEFAULT '#0f172a',
+    headerGradientEnd TEXT NOT NULL DEFAULT '#1e3a5f',
+    footerBg TEXT NOT NULL DEFAULT '#0f172a'
+  );
 `);
 
 /* ── Migrations ───────────────────────────────────── */
@@ -117,6 +137,7 @@ export const tables = {
   highlights:   { type: 'list',   columns: ['icon', 'title', 'description'] },
   testimonials: { type: 'list',   columns: ['name', 'role', 'text'] },
   products:     { type: 'list',   columns: ['name', 'description', 'category', 'price'] },
+  theme:        { type: 'object', columns: ['colorPrimary', 'colorPrimaryDark', 'colorPrimaryLight', 'colorSecondary', 'colorAccent', 'colorText', 'colorTextLight', 'colorBg', 'colorBgAlt', 'colorBorder', 'heroGradientStart', 'heroGradientMid', 'heroGradientEnd', 'headerGradientStart', 'headerGradientEnd', 'footerBg'] },
 };
 
 /* ── Data helpers ─────────────────────────────────── */

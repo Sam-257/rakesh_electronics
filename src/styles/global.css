@@ -20,6 +20,12 @@
   --color-bg-alt: #f8fafc;
   --color-border: #e2e8f0;
   --color-white: #ffffff;
+  --color-hero-gradient-start: #0f172a;
+  --color-hero-gradient-mid: #1e3a5f;
+  --color-hero-gradient-end: #2563eb;
+  --color-header-gradient-start: #0f172a;
+  --color-header-gradient-end: #1e3a5f;
+  --color-footer-bg: #0f172a;
 
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-size-xs: 0.75rem;

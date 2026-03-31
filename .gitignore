@@ -14,6 +14,7 @@ dist-ssr
 
 # CMS data (user content)
 server/data/
+!server/data/defaults.js
 
 # Editor directories and files
 .vscode/*

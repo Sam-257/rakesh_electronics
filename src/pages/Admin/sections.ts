@@ -142,6 +142,30 @@ export const sections: SectionConfig[] = [
       price: z.number().min(0, 'Price must be 0 or more'),
     }),
   },
+  {
+    key: 'theme',
+    path: 'theme',
+    label: 'Theme',
+    editor: 'object',
+    fields: [
+      { name: 'colorPrimary', label: 'Primary Color', type: 'color' },
+      { name: 'colorPrimaryDark', label: 'Primary Dark', type: 'color' },
+      { name: 'colorPrimaryLight', label: 'Primary Light', type: 'color' },
+      { name: 'colorSecondary', label: 'Secondary Color', type: 'color' },
+      { name: 'colorAccent', label: 'Accent Color', type: 'color' },
+      { name: 'colorText', label: 'Text Color', type: 'color' },
+      { name: 'colorTextLight', label: 'Text Light', type: 'color' },
+      { name: 'colorBg', label: 'Background', type: 'color' },
+      { name: 'colorBgAlt', label: 'Background Alt', type: 'color' },
+      { name: 'colorBorder', label: 'Border Color', type: 'color' },
+      { name: 'heroGradientStart', label: 'Hero Gradient Start', type: 'color' },
+      { name: 'heroGradientMid', label: 'Hero Gradient Mid', type: 'color' },
+      { name: 'heroGradientEnd', label: 'Hero Gradient End', type: 'color' },
+      { name: 'headerGradientStart', label: 'Page Header Gradient Start', type: 'color' },
+      { name: 'headerGradientEnd', label: 'Page Header Gradient End', type: 'color' },
+      { name: 'footerBg', label: 'Footer Background', type: 'color' },
+    ],
+  },
 ];
 
 export const getSectionByPath = (path: string | undefined) => {
